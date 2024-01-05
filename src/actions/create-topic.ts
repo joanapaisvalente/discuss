@@ -39,6 +39,8 @@ export async function createTopic(
     };
   }
 
+  // await new Promise((resolve) => setTimeout(resolve, 2000));
+
   const result = createTopicSchema.safeParse({
     name: formData.get("name"),
     description: formData.get("description"),
